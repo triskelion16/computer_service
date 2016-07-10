@@ -1,0 +1,19 @@
+{
+  "name": "computer_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triskelion16/computer_service.git"
+  },
+  "author": "Sebastian Solecki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/triskelion16/computer_service/issues"
+  },
+  "homepage": "https://github.com/triskelion16/computer_service#readme"
+}
