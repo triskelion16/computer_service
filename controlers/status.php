@@ -16,9 +16,9 @@
             
             if($is_row) {
                 $row = $result->fetch_assoc();
-                $status = $row["status"];
+                //$status = $row["status"];
                 
-                echo $status;
+                //echo $status;
                 
                 $result->close();
             }
