@@ -11,5 +11,5 @@
 </head>
 <body>
     <header>
-        <div class="main_widht">Serwis komputerowy</div>
+        <div class="main_widht"><a href="index.php">Serwis komputerowy</a></div>
     </header>

@@ -3,12 +3,21 @@ header {
     background-color: black;
     
     div {
-        color: white;
         text-align: center;
         font-weight: bold;
         font-size: 40px;
         letter-spacing: 3px;
         padding-top: 20px;
         text-transform: uppercase;
+        
+        :hover {
+            color: #ddd;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            
+        }
     }
 }

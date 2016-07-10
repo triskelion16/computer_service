@@ -1,6 +1,7 @@
 <?php
+    include("configs.php");
 
-    (empty($_GET['page'])) ? $url = "home.php" : $url = $_GET['page'];
+    (empty($_GET['page'])) ? $url = HOME : $url = $_GET['page'];
     $file = "pages/".$url;
 
     include("modules/header.php");
