@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     include("configs.php");
 
     (empty($_GET['page'])) ? $url = HOME : $url = $_GET['page'];
