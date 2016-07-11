@@ -1,7 +1,3 @@
-<!--<?php
-    session_start();
-?>-->
-
 <main>
     <div class="main_width">
         <form class="cl_form" action="index.php?page=cl_answer.php" method="post">

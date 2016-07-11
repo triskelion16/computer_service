@@ -9,9 +9,10 @@
         header('Location: index.php?page=errorConn.php');
     }
     else {
-        $orderId = $_POST['orderId'];
+        $login = $_POST['login'];
+        $pass = $_POST['pass'];
         
-        $sql = "SELECT * FROM fault WHERE idFault='$orderId'";
+        $sql = "SELECT * FROM employee WHERE login='$login' AND password='$pass'";
         
         if($result = @$connection->query($sql)) {
             $is_row = $result->num_rows;
@@ -23,8 +24,8 @@
                 $result->close();
             }
             else {
-                $_SESSION['err'] = "<strong style='color: red'>Niepoprawny numer zgłoszenia!</strong>";
-                header('Location: index.php?page=client.php');
+                $_SESSION['err'] = "<strong style='color: red'>Błędny login lub hasło!</strong>";
+                header('Location: index.php?page=login.php');
             }
         }
         
