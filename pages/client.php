@@ -4,6 +4,10 @@
             <h3>Podaj numer zgłoszenia:</h3>
             <input type="text" name="orderId">
             <input type="submit" value="Sprawdź">
+            
+            <?php
+                $_SESSION['place'] = 'client';
+            ?>
         </form>
         
         <?php

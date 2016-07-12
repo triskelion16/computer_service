@@ -1,5 +1,4 @@
 <?php
-
     require_once "connect.php";
 
     $connection = @new mysqli($host, $db_user, $db_pass, $db_name);
@@ -10,6 +9,7 @@
     }
     else {
         $orderId = $_POST['orderId'];
+        $_SESSION['ID'] = $orderId;
         
         $sql = "SELECT * FROM fault WHERE idFault='$orderId'";
         
@@ -24,7 +24,7 @@
             }
             else {
                 $_SESSION['err'] = "<strong style='color: red'>Niepoprawny numer zgłoszenia!</strong>";
-                header('Location: index.php?page=client.php');
+                header('Location: index.php?page='.$_SESSION['place'].'.php');
             }
         }
         

@@ -1,5 +1,5 @@
 <?php
-require("controlers/login_ctr.php");
+require_once("controlers/login_ctr.php");
 ?>
 
 <main>
