@@ -1,5 +1,10 @@
 <?php
     if(isset($_SESSION['err'])) unset($_SESSION['err']);
+    if((isset($_SESSION['login'])) && ($_SESSION['login'] == true)) {
+            header('Location: index.php?page=service.php');
+            exit();
+    }
+    else $_SESSION['login'] = false
 ?>
 
 <main>

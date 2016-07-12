@@ -7,7 +7,7 @@
                 <h3>Podaj login:</h3>
                 <input type="text" name="login">
                 <h3>Podaj hasło:</h3>
-                <input type="text" name="pass"><br><br>
+                <input type="password" name="pass"><br><br>
                 <input type="submit" value="Zaloguj">
             </form>
 
