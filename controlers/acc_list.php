@@ -9,7 +9,7 @@
     }
     else {
         
-        $sql = "SELECT * FROM fault WHERE status='W trakcie naprawy'";
+        $sql = "SELECT * FROM fault WHERE status=".$_SESSION['where'];
         
         if($result = @$connection->query($sql)) {
             $num_rows = $result->num_rows;
@@ -21,9 +21,9 @@
                     ."<span>".$row['acceptanceDate']."</span>"
                     ."<span>".$row['faultDescription']."</span><br>";
             }
+        $result->close();
         }
         
-        $result->close();
         $connection->close();
     }
 

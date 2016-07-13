@@ -4,11 +4,12 @@
             <?php
             
             require("controlers/status.php");
+            $_SESSION['what_update'] = 'repair_update';
             
             echo "<h2>Status zgłoszenia:  ".$row['status']."</h2>";
             echo "<hr><br>";
             echo "<strong>Data przyjęcia: </strong>".$row['acceptanceDate']."<br>";
-            echo "<strong>Opis: </strong>".$row['faultDescription'];
+            echo "<strong>Opis zgłoszenia: </strong>".$row['faultDescription'];
             ?>
             
             <form action="index.php?page=db_edit.php" method="post">

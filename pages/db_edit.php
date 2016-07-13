@@ -2,7 +2,7 @@
     <div class="main_width">
         <div class="cl_print">
             <?php
-            require("controlers/repair_update.php");
+            require("controlers/".$_SESSION['what_update'].".php");
             ?>
             
             <h1>Zaktualizowano bazę danych!</h1>
