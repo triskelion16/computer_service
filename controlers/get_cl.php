@@ -9,7 +9,6 @@
     }
     else {
         $clientId = $_POST['clientId'];
-        //$_SESSION['ID'] = $orderId;
         
         $sql = "SELECT * FROM client WHERE id='$clientId'";
         
