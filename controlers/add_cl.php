@@ -1,5 +1,6 @@
 <?php
     require_once "connect.php";
+    $_SESSION['new_cl'] = false;
 
     $connection = @new mysqli($host, $db_user, $db_pass, $db_name);
 
@@ -8,9 +9,12 @@
         header('Location: index.php?page=errorConn.php');
     }
     else {
-        $date = date("Y.m.d");
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+        $address = $_POST['address'];
+        $email = $_POST['email'];
         
-        $sql = "UPDATE fault SET status='Odebrany', receiptDate='$date' WHERE idFault=".$_SESSION['ID'];
+        $sql = "INSERT INTO client (firstName, lastName, address, email) VALUES ('$firstName', '$lastName', '$address', '$email')";
         
         if(!$connection->query($sql)) {
             header('Location: index.php?page=errorConn.php');

@@ -8,13 +8,16 @@
             <h3>Podaj ID klienta:</h3>
             <input type="text" name="clientId">
             <input type="submit" value="Wybierz">
-              
             </form>
+            
+            <a style="margin-left:25px" href="?page=new_client_form.php" class="home_a"><button class="home_button sv_btn">Dodaj klienta</button></a>
+            
             <hr><br>
             <strong><span>ID</span>
-                <span style="margin-left:50px">Imię</span>
-                <span style="margin-left:50px">Nazwisko</span>
-                <span style="margin-left:70px">Adres</span>
+                <span style="margin-left:20px">Imię</span>
+                <span style="margin-left:40px">Nazwisko</span>
+                <span style="margin-left:10px">Adres</span>
+                <span style="margin-left:210px">E-mail</span>
             </strong><br>
             
             <?php
