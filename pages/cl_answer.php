@@ -5,6 +5,7 @@
             <?php
             
             require("controlers/status.php");
+            
             echo "<h2>Status zgłoszenia:  ".$row['status']."</h2>";
             echo "<hr><br>";
             echo "<strong>Data przyjęcia: </strong>".$row['acceptanceDate']."<br>";

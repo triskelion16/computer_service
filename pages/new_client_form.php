@@ -6,7 +6,7 @@
     <div class="main_width">
         <div class="cl_print">
             
-            <form action="index.php?page=new_acc_form.php" method="post">
+            <form action="index.php?page=search_client.php" method="post">
                 <strong>Imię: </strong>
                 <input type="text" name="firstName"><br>
                 <strong>Nazwisko: </strong>

@@ -1,10 +1,14 @@
+<?php
+    if(isset($_SESSION['new_cl']) && ($_SESSION['new_cl'])) require 'controlers/add_cl.php';
+?>
+
 <main>
     <div class="main_width">
         <div>
             <?php
                 if(isset($_SESSION['err'])) echo $_SESSION['err'];
             ?>
-            <form class="cl_form" action="index.php?page=sv_acc_from.php" method="post">
+            <form class="cl_form" action="index.php?page=new_acc_form.php" method="post">
             <h3>Podaj ID klienta:</h3>
             <input type="text" name="clientId">
             <input type="submit" value="Wybierz">
@@ -21,7 +25,6 @@
             </strong><br>
             
             <?php
-                //$_SESSION['where'] = "'W trakcie naprawy'";
                 require("controlers/client_list.php");
             ?>
             
